@@ -1,4 +1,4 @@
-package org.example;
+package io.artur.kafka.connector.github;
 
 /**
  * Created by jeremy on 5/3/16.

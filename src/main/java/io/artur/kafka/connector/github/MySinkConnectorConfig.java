@@ -1,4 +1,4 @@
-package org.example;
+package io.artur.kafka.connector.github;
 
 import org.apache.kafka.common.config.AbstractConfig;
 import org.apache.kafka.common.config.ConfigDef;
@@ -8,16 +8,16 @@ import org.apache.kafka.common.config.ConfigDef.Importance;
 import java.util.Map;
 
 
-public class MySourceConnectorConfig extends AbstractConfig {
+public class MySinkConnectorConfig extends AbstractConfig {
 
   public static final String MY_SETTING_CONFIG = "my.setting";
   private static final String MY_SETTING_DOC = "This is a setting important to my connector.";
 
-  public MySourceConnectorConfig(ConfigDef config, Map<String, String> parsedConfig) {
+  public MySinkConnectorConfig(ConfigDef config, Map<String, String> parsedConfig) {
     super(config, parsedConfig);
   }
 
-  public MySourceConnectorConfig(Map<String, String> parsedConfig) {
+  public MySinkConnectorConfig(Map<String, String> parsedConfig) {
     this(conf(), parsedConfig);
   }
 
